@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reviseer jouw tp's</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="main-title">Reviseer jouw tp's</h1>
+
+        <input type= "text" placeholder= "vul de TP in" />
+        <button type="button" onclick="tp">Verifeer</button>
+        <script>
+            function tp()
+            {
+                if()
+                {
+
+                }
+            }
+        </script>
+
+         
+        <button class="changeColorMode_button" type="button" id="changeColor" onclick="changeColorMode()">Activate light mode</button>
+        <script>
+        function changeColorMode()
+        {   
+            var x = document.getElementById("changeColor")
+            if (x.innerHTML == "Activate light mode")
+            {
+                x.innerHTML = "Activate dark mode"
+                x.style.backgroundColor="white"
+                document.body.style.backgroundColor= "white";
+            }
+            else
+            {
+                x.innerHTML = "Activate light mode"
+                x.style.backgroundColor = "grey"
+                document.body.style.backgroundColor= "black";
+            }
+        }
+        </script>
+
+        <nav class="bottom">
+            <div class="bottom_item">
+                <p>Created by Piwy:</p>
+            </div>
+
+            <div class="bottom_item">
+                <a href="https://twitter.com/piwy_dev" class="bottom_link">
+                    <img src="tweeter_icon.png"> @piwy_dev 
+                </a>
+            </div>     
+
+            <div class="bottom_item">
+                <a href="https://www.instagram.com/piwy_dev/" class="bottom_link">
+                    <img src="instagram_icon.png"> @piwy_dev 
+                </a>
+            </div>
+
+            <div class="bottom_item">
+                <a href="https://www.youtube.com/channel/UCu-u2s84iTKb07lS7LIfwQA?" class="bottom_link">
+                    <img src="youtube_icon.png"> Piwy
+                </a>
+            </div>  
+
+            <div class="bottom_item bottom_item--right bottom_item--clickable" tabindex="0">
+               <p class="link"><u>Preferences</u></p>
+            </div>
+
+            <div class="bottom_item bottom_item--right bottom_item--clickable" tabindex="0">
+                <p class="link">
+                    <a href="mailto: pyhaubruge@gmail.com>">Report a problem</a>
+                </p> 
+            </div>
+        </nav>
+    </body>
+</html>
